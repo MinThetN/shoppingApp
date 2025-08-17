@@ -10,7 +10,7 @@ import Firebase
 
 @main
 struct shoppingAppApp: App {
-    @StateObject private var authViewModel = AuthViewModel()
+    @StateObject private var authViewModel = AuthViewModel.shared
     
     // Init firebase
     init() {
